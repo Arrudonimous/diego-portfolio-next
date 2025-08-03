@@ -12,6 +12,20 @@
       "HELLO": "Olá",
       "DOWNLOAD_CV": "Baixar CV",
       "LETS_TALK": "Vamos Conversar"
+    },
+    "Experiences": {
+      "Exp_1": {
+        "TEXT_1": "3 anos de",
+        "TEXT_2": "Dev. de Sistemas"
+      },
+      "Exp_2": {
+        "TEXT_1": "3 anos como",
+        "TEXT_2": "Desenvolvedor"
+      },
+      "Exp_3": {
+        "TEXT_1": "Estudante de",
+        "TEXT_2": "Ciência da Computação"
+      }
     }
   }
 }

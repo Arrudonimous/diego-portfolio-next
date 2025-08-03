@@ -1,29 +1,32 @@
+import { useTranslations } from 'next-intl';
 import { IconType } from 'react-icons';
 import { BsLaptop, BsCodeSlash } from 'react-icons/bs';
 import { MdOutlineScience } from 'react-icons/md';
 
-interface Experiences {
+interface Experience {
   icon: IconType;
   text1: string;
   text2: string;
 }
 
-const experiences: Experiences[] = [
-  {
-    icon: BsLaptop,
-    text1: '3 anos de',
-    text2: 'Dev. de Sistemas',
-  },
-  {
-    icon: BsCodeSlash,
-    text1: '3 ano como',
-    text2: 'Desenvolvedor',
-  },
-  {
-    icon: MdOutlineScience,
-    text1: 'Estudante de',
-    text2: 'Ciência da Computação',
-  },
-];
+export function useExperiences(): Experience[] {
+  const t = useTranslations('Default');
 
-export default experiences;
+  return [
+    {
+      icon: BsLaptop,
+      text1: t('Experiences.Exp_1.TEXT_1'),
+      text2: t('Experiences.Exp_1.TEXT_2'),
+    },
+    {
+      icon: BsCodeSlash,
+      text1: t('Experiences.Exp_2.TEXT_1'),
+      text2: t('Experiences.Exp_2.TEXT_2'),
+    },
+    {
+      icon: MdOutlineScience,
+      text1: t('Experiences.Exp_3.TEXT_1'),
+      text2: t('Experiences.Exp_3.TEXT_2'),
+    },
+  ];
+}

@@ -1,6 +1,8 @@
-import experiences from '@/mocks/Experiences';
+import { useExperiences } from '@/mocks/Experiences';
 
 export default function Experience() {
+  const experiences = useExperiences()
+  
   return (
     <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-20">
       {experiences.map((item) => (
@@ -10,7 +12,7 @@ export default function Experience() {
         >
           <item.icon size={100} color="#7B4AE2" />
           <span className="font-medium mt-2">{item.text1}</span>
-          <h1 className="font-bold text-2xl md:text-3xl">{item.text2}</h1>
+          <h1 className="font-bold text-2xl md:text-3xl text-center">{item.text2}</h1>
         </div>
       ))}
     </div>
