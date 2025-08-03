@@ -7,7 +7,6 @@ import Skills from "../../sections/Skills";
 import Career from "../../sections/Career";
 import Recomendations from "../../sections/Recomendations";
 import Contact from "../../sections/Contact";
-import { useTranslations } from "next-intl";
 
 export default function Home() {
 

@@ -26,6 +26,13 @@
         "TEXT_1": "Student of",
         "TEXT_2": "Computer Science"
       }
+    },
+    "About": {
+      "ABOUT_ME": "🧐 About me",
+      "PARAGRAPH_1": "You can call me Diego! I'm passionate about technology and its transformative power 🌍. In 2020, I began my journey with a Technical Course in Systems Development at Etec de Santana de Parnaíba, where I had my first contact with programming 💻.",
+      "PARAGRAPH_2": "In early 2022, I deepened my studies in NodeJS, JavaScript, and TypeScript to develop my thesis ✍🏼, which I successfully completed that same year. Currently, I’m pursuing a Bachelor’s Degree in Computer Science at UNIP Alphaville 🎓.",
+      "PARAGRAPH_3": "Since mid-2022, my focus has been Front-End development, studying ReactJS in depth ⚛️ and React Native at an introductory level 📱, which shaped me into a junior Full Stack developer 🚀. I have hands-on experience working on projects with NextJS, ReactJS, and NodeJS, using modern technologies like TypeScript, pure CSS, Styled Components, Ant Design, and TailwindCSS 🎨.",
+      "PARAGRAPH_4": "I aim to grow professionally and add value to dynamic teams, always learning and evolving day by day 📈🔥."
     }
   }
 }
