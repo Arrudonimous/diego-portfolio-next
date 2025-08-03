@@ -2,14 +2,14 @@
 
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
-import { useRef } from 'react'
 import Card from '../../components/Card'
-import Projects from '@/mocks/Projects'
-import ProjectsAngular from '@/mocks/ProjectsAngular'
+import { useProjects } from '@/mocks/Projects'
+import { useProjectsAngular } from '@/mocks/ProjectsAngular'
 import CardWork from '../../components/CardWork'
 
 export default function Portfólio() {
-  const sliderRef = useRef(null)
+  const Projects = useProjects()
+  const ProjectsAngular = useProjectsAngular()
   const [sliderInstanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     mode: 'snap',

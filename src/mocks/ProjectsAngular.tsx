@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 interface Card {
   name: string;
 }
@@ -8,6 +10,23 @@ interface Project {
   cards: Card[];
   image: string;
   link: string;
+}
+
+export const useProjectsAngular = () => {
+  const t = useTranslations('Default.ProjectsAngular')
+
+  return [
+    {
+      title: t('Project_1.TITLE'),
+      description: t('Project_1.DESCRIPTION'),
+      cards: [
+        { name: 'AngularJs' },
+        { name: 'SCSS' },
+      ],
+      image: '/assets/images/AngularTaskApp.png',
+      link: 'https://tasks-list-angular.vercel.app',
+    }
+  ]
 }
 
 const projectsAngular: Project[] = [

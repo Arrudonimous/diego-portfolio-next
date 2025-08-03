@@ -33,6 +33,30 @@
       "PARAGRAPH_2": "No início de 2022, aprofundei meus estudos em NodeJS, JavaScript e TypeScript para o desenvolvimento do meu TCC ✍🏼, que finalizei com sucesso no mesmo ano. Atualmente, curso Bacharelado em Ciência da Computação na UNIP Alphaville 🎓.",
       "PARAGRAPH_3": "Desde meados de 2022, meu foco passou a ser o desenvolvimento Front-End, estudando ReactJS com profundidade ⚛️ e React Native de forma introdutória 📱, o que me tornou um desenvolvedor Full Stack júnior 🚀. Tenho experiência prática atuando em projetos com NextJS, ReactJS e NodeJS, utilizando tecnologias modernas como TypeScript, CSS puro, Styled Components, Ant Design e TailwindCSS 🎨.",
       "PARAGRAPH_4": "Busco crescer profissionalmente e agregar valor a equipes dinâmicas, sempre aprendendo e evoluindo dia após dia 📈🔥."
+    },
+    "Projects" : {
+      "Project_1": {
+        "TITLE": "Github Finder",
+        "DESCRIPTION": "Aplicação que busca o perfil de alguém no github utilizando seu username com tema dark e light."
+      },
+      "Project_2": {
+        "TITLE": "Acqua building",
+        "DESCRIPTION": "Aplicação desenvolvida com um timer funcional para uma inauguração de um prédio fictício"
+      },
+      "Project_3": {
+        "TITLE": "Weather App",
+        "DESCRIPTION": "Aplicação que busca a temperatura em qualquer lugar do mundo"
+      },
+      "Project_4": {
+        "TITLE": "DevTech",
+        "DESCRIPTION": "LandingPage para uma empresa fictícia"
+      }
+    },
+    "ProjectsAngular": {
+      "Project_1": {
+        "TITLE": "Angular Task App",
+        "DESCRIPTION": "Um gerenciador de tarefas pessoais desenvolvido todo em AngularJs"
+      }
     }
   }
 }

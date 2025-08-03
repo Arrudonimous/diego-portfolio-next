@@ -33,6 +33,30 @@
       "PARAGRAPH_2": "In early 2022, I deepened my studies in NodeJS, JavaScript, and TypeScript to develop my thesis ✍🏼, which I successfully completed that same year. Currently, I’m pursuing a Bachelor’s Degree in Computer Science at UNIP Alphaville 🎓.",
       "PARAGRAPH_3": "Since mid-2022, my focus has been Front-End development, studying ReactJS in depth ⚛️ and React Native at an introductory level 📱, which shaped me into a junior Full Stack developer 🚀. I have hands-on experience working on projects with NextJS, ReactJS, and NodeJS, using modern technologies like TypeScript, pure CSS, Styled Components, Ant Design, and TailwindCSS 🎨.",
       "PARAGRAPH_4": "I aim to grow professionally and add value to dynamic teams, always learning and evolving day by day 📈🔥."
+    },
+    "Projects": {
+      "Project_1": {
+        "TITLE": "Github Finder",
+        "DESCRIPTION": "Application that searches for someone's GitHub profile using their username, with dark and light themes."
+      },
+      "Project_2": {
+        "TITLE": "Acqua Building",
+        "DESCRIPTION": "Application developed with a functional countdown timer for the inauguration of a fictional building."
+      },
+      "Project_3": {
+        "TITLE": "Weather App",
+        "DESCRIPTION": "Application that fetches the temperature anywhere in the world."
+      },
+      "Project_4": {
+        "TITLE": "DevTech",
+        "DESCRIPTION": "Landing page for a fictional company."
+      }
+    },
+    "ProjectsAngular": {
+      "Project_1": {
+        "TITLE": "Angular Task App",
+        "DESCRIPTION": "A personal task manager fully developed in AngularJS."
+      }
     }
   }
 }
