@@ -1,0 +1,17 @@
+{
+  "Default": {
+    "Header": {
+      "Nav":{
+        "HOME": "Home",
+        "ABOUT": "Sobre mim",
+        "PORTFOLIO": "Portfólio",
+        "SKILLS": "Skills",
+        "RECOMENDATIONS": "Recomendações",
+        "CONTACTS": "Contatos"
+      },
+      "HELLO": "Olá",
+      "DOWNLOAD_CV": "Baixar CV",
+      "LETS_TALK": "Vamos Conversar"
+    }
+  }
+}
