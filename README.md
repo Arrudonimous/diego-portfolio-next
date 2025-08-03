@@ -1,37 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Diego Arruda — Portfolio
 
-## Getting Started
+[🇧🇷 Versão em Português](#versão-em-português) | [🇺🇸 English Version](#english-version)
 
-First, run the development server:
+---
+
+## 🇧🇷 Versão em Português
+
+Olá! 👋
+
+Este é o meu portfólio profissional, desenvolvido para apresentar quem eu sou, minhas habilidades e alguns dos projetos que venho construindo na área de desenvolvimento de software.
+
+Criei esse site com o objetivo de compartilhar meu progresso como desenvolvedor, destacar minhas experiências e facilitar o contato com recrutadores, colegas e outros desenvolvedores.
+
+### 🔧 Tecnologias que utilizei
+
+- HTML5  
+- CSS3  
+- JavaScript  
+- TailwindCSS (em alguns componentes)  
+- Git e GitHub
+
+### ✨ O que você vai encontrar aqui
+
+- Uma breve apresentação sobre mim  
+- Minhas principais habilidades e tecnologias que estudo  
+- Projetos que desenvolvi ou estou desenvolvendo  
+- Meus contatos e redes sociais  
+
+### 🚀 Como rodar localmente
+
+1. Clone este repositório:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Arrudonimous/diego-portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Acesse a pasta:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd diego-portfolio
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Abra o arquivo `index.html` no seu navegador.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🇺🇸 English Version
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Hey there! 👋
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This is my personal portfolio website, built to introduce myself, highlight my skills, and showcase some of the projects I've been working on as a software developer.
 
-## Deploy on Vercel
+I created this project to share my journey as a developer, display my experience, and make it easier for recruiters, peers, and other devs to connect with me.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🔧 Technologies I used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# diego-portfolio-next" 
+- HTML5  
+- CSS3  
+- JavaScript  
+- TailwindCSS (in some components)  
+- Git & GitHub
+
+### ✨ What you'll find here
+
+- A short introduction about me  
+- My main skills and technologies I'm learning  
+- Projects I’ve created or contributed to  
+- My contact and social media links  
+
+### 🚀 How to run it locally
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/Arrudonimous/diego-portfolio.git
+```
+
+2. Navigate into the folder:
+
+```bash
+cd diego-portfolio
+```
+
+3. Open `index.html` in your browser.
+
+---
+
+📌 O design é simples e direto, pensado para ser responsivo e funcionar bem tanto no desktop quanto no celular.  
+📌 The design is clean and responsive — perfect for viewing on both desktop and mobile.
+
+Obrigado por visitar! / Thanks for stopping by!
