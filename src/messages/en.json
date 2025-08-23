@@ -35,6 +35,7 @@
       "PARAGRAPH_4": "I aim to grow professionally and add value to dynamic teams, always learning and evolving day by day 📈🔥."
     },
     "Projects": {
+      "TITLE": "Works and projects",
       "Project_1": {
         "TITLE": "Github Finder",
         "DESCRIPTION": "Application that searches for someone's GitHub profile using their username, with dark and light themes."
@@ -57,6 +58,98 @@
         "TITLE": "Angular Task App",
         "DESCRIPTION": "A personal task manager fully developed in AngularJS."
       }
+    },
+    "Studies": {
+      "Study_1": {
+        "TITLE": "Bachelor's Degree in CS",
+        "DESCRIPTION": "Bachelor’s in Computer Science at UNIP Alphaville",
+        "TIME": "---",
+        "DATE": "January/2023 · Present"
+      },
+      "Study_2": {
+        "TITLE": "JStack",
+        "DESCRIPTION": "ReactJS, Styled Components and NodeJS course taught by Mateus Silva",
+        "TIME": "---",
+        "DATE": "January/2022 · Present"
+      },
+      "Study_3": {
+        "TITLE": "Systems Development - ETEC",
+        "DESCRIPTION": "Technical course in Systems Development alongside high school",
+        "TIME": "3 years",
+        "DATE": "January/2020 · December/2022"
+      },
+      "Study_4": {
+        "TITLE": "DankiCode",
+        "DESCRIPTION": "NodeJS course taught by Guilherme Grillo",
+        "TIME": "6 months",
+        "DATE": "June/2021 · December/2022"
+      },
+      "Study_5": {
+        "TITLE": "EF SET 76/100",
+        "DESCRIPTION": "Online English proficiency test certificate",
+        "TIME": "2 months",
+        "DATE": "August/2022"
+      }
+    },
+    "Works": {
+      "Work_1": {
+        "TITLE": "Front-end Developer Jr II - Looplex",
+        "DESCRIPTION": "I work as a junior front-end developer at Looplex",
+        "TIME": "---",
+        "DATE": "August/2023 · Present"
+      },
+      "Work_2": {
+        "TITLE": "Waiter - Pesqueiro Arruda's",
+        "DESCRIPTION": "I work as a waiter and cashier at Pesqueiro and Restaurante Arruda's",
+        "TIME": "---",
+        "DATE": "January/2021 · Present"
+      },
+      "Work_3": {
+        "TITLE": "Front-end Developer - TecsaGroup",
+        "DESCRIPTION": "I worked developing features for an e-commerce platform and the mobile app",
+        "TIME": "4 months",
+        "DATE": "May/2023 · August/2023"
+      },
+      "Work_4": {
+        "TITLE": "Mobile Developer - ControlTracker",
+        "DESCRIPTION": "I worked on developing features for native mobile applications",
+        "TIME": "3 months",
+        "DATE": "November/2022 · January/2023"
+      },
+      "Work_5": {
+        "TITLE": "Freelance Developer - WepTek",
+        "DESCRIPTION": "I worked developing various applications for different clients",
+        "TIME": "4 months",
+        "DATE": "February/2023 · May/2023"
+      }
+    },
+    "Career" : {
+      "CAREER": "💼 Career",
+      "CARRER_PATH": "Path until here",
+      "PROFESSIONAL_AREA": "Professional Area",
+      "PROFESSIONAL_SINCE": "2021 · Today",
+      "ACADEMIC_AREA": "Academic Area",
+      "ACADEMIC_SINCE": "2020 · Today"
+    },
+    "Skills": {
+      "TAG_TITLE": "🧑‍💻 Skills · Experiences",
+      "TITLE": "Techs and skills",
+      "DAY_TECHS": "Techs I use in my daily life",
+      "OTHER_TECHS": "Other techs I have already worked with on projects"
+    },
+    "Recomendations": {
+      "TAG_TITLE": "💬 Recomendations",
+      "TITLE": "As a testimonial",
+      "Recomendation_1": {
+        "CONTENT": "...Moreover, he was an excellent student, always acting with respect and being participative in class. In addition, he was punctual and assiduous, achieving excellent performance in all the assessments of the subject I taught...!",
+        "ROLE": "Systems Analyst"
+      }
+    },
+    "Contact": {
+      "TAG_TITLE": "📬 Contacts",
+      "TITLE": "Lets talk!",
+      "BACK": "Back to top",
+      "COPIED": "Email copied!"
     }
   }
 }

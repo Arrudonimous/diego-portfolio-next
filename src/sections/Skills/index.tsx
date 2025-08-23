@@ -13,6 +13,7 @@ import CardWork from '../../components/CardWork'
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
 import { useRef } from 'react'
+import { useTranslations } from 'next-intl'
 
 export default function Skills() {
   const [sliderRef1] = useKeenSlider<HTMLDivElement>({
@@ -31,21 +32,22 @@ export default function Skills() {
     },
   })
 
+  const t = useTranslations('Default')
+  const T_PREFIX = "Skills."
+
   return (
     <div className="mt-16 text-white md:mt-36 md:flex md:flex-col md:justify-center md:items-center md:w-full" id="Skills">
       <div className="md:hidden">
-        <Card text="🧑‍💻 Skills " />
+        <Card text={t(T_PREFIX + "TAG_TITLE")} />
       </div>
 
       <div className="hidden md:flex">
-        <CardWork text="🧑‍💻 Skills · Experiências" />
+        <CardWork text={t(T_PREFIX + "TAG_TITLE")} />
       </div>
 
-      <h1 className="font-extrabold text-2xl mt-4 md:hidden">Teclogias</h1>
-      <h1 className="font-extrabold text-2xl md:hidden">e habilidades</h1>
-      <h1 className="font-extrabold text-5xl mt-6 hidden md:flex md:mb-24">Tecnologias e habilidades</h1>
+      <h1 className="mt-4 font-extrabold text-white text-2xl md:text-5xl w-[8rem] md:w-auto">{t(T_PREFIX + "TITLE")}</h1>
 
-      <span className="flex text-sm md:text-2xl md:mb-10 opacity-50 mt-8 mb-6">Techs que uso no dia a dia</span>
+      <span className="flex text-sm md:text-2xl md:mb-10 opacity-50 mt-8 mb-6">{t(T_PREFIX + "DAY_TECHS")}</span>
 
       {/* Mobile Slider 1 */}
       <div className=' w-full text-border md:hidden'>
@@ -74,7 +76,7 @@ export default function Skills() {
         <SiInsomnia size={70} className="hover:scale-[1.1] opacity-50 hover:opacity-100 transition-all duration-200" />
       </div>
 
-      <span className="flex text-sm md:text-2xl opacity-50 mt-8 mb-6 md:mb-10">Outras techs com que já realizei projetos</span>
+      <span className="flex text-sm md:text-2xl opacity-50 mt-8 mb-6 md:mb-10">{t(T_PREFIX + "OTHER_TECHS")}</span>
 
       {/* Mobile Slider 2 */}
       <div className=' w-full text-border md:hidden'>

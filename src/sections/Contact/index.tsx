@@ -5,10 +5,13 @@ import { FaArrowTurnUp } from 'react-icons/fa6';
 import { useState } from 'react';
 import CardWork from '../../components/CardWork';
 import LinkInstagram from '../../components/LinkInstagram';
+import { useTranslations } from 'next-intl';
 
 export default function Contact() {
   const [copy, setCopy] = useState(false);
   const email = 'diegoarrudacontato@gmail.com';
+  const t = useTranslations('Default')
+  const T_PREFIX = "Contact."
 
   async function handleCopy() {
     try {
@@ -25,11 +28,9 @@ export default function Contact() {
       className="mt-16 md:flex md:items-center md:justify-center md:flex-col"
       id="Contacts"
     >
-      <CardWork text="📬 Contatos" />
-      <h1 className="mt-4 font-extrabold text-white text-2xl md:hidden">Entre</h1>
-      <h1 className="font-extrabold text-white text-2xl md:hidden">em contato</h1>
-      <h1 className="font-extrabold text-white text-2xl md:text-5xl hidden md:flex md:mt-16">
-        Vamos conversar!
+      <CardWork text={t(T_PREFIX + "TAG_TITLE")} />
+      <h1 className="mt-4 font-extrabold text-white text-2xl md:text-5xl w-[8rem] md:w-auto">
+        {t(T_PREFIX + "TITLE")}
       </h1>
 
       <div className="md:flex md:flex-row md:items-center md:gap-10 md:mt-16">
@@ -47,7 +48,7 @@ export default function Contact() {
             >
               <IoCopy size={20} color="#7B4AE2" />
             </button>
-            {copy && <span className="text-text">E-mail copiado!</span>}
+            {copy && <span className="text-text">{t(T_PREFIX + "COPIED")}</span>}
           </div>
         </div>
       </div>
@@ -56,7 +57,7 @@ export default function Contact() {
         href="#Header"
         className="flex flex-row items-center text-text font-semibold my-16 hover:cursor-pointer opacity-50"
       >
-        <h1>Voltar ao topo</h1>
+        <h1>{t(T_PREFIX + "BACK")}</h1>
         <FaArrowTurnUp size={20} className="flex" />
       </a>
     </div>

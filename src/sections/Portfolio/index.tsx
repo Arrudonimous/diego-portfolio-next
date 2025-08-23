@@ -6,6 +6,7 @@ import Card from '../../components/Card'
 import { useProjects } from '@/mocks/Projects'
 import { useProjectsAngular } from '@/mocks/ProjectsAngular'
 import CardWork from '../../components/CardWork'
+import { useTranslations } from 'next-intl'
 
 export default function Portfólio() {
   const Projects = useProjects()
@@ -19,13 +20,14 @@ export default function Portfólio() {
     },
   })
 
+  const t = useTranslations("Default")
+  const T_PREFIX = "Projects."
+
   return (
     <div className="flex mt-24 flex-col md:mt-32" id="Portfolio">
       <Card text="🔗 Portfólio" />
-      <h1 className="mt-4 font-extrabold text-white text-2xl md:hidden">Trabalhos </h1>
-      <h1 className="font-extrabold text-white text-2xl md:hidden">e Projetos</h1>
 
-      <h1 className="font-extrabold text-white text-5xl mt-6 mb-24 hidden md:flex">Trabalhos e Projetos</h1>
+      <h1 className="mt-4 font-extrabold text-white text-2xl md:text-5xl w-[8rem] md:w-auto">{t(T_PREFIX + "TITLE")}</h1>
 
       <h2 className="font-extrabold text-white text-xl flex md:text-3xl mt-8 md:mt-0">React.js/Next.js</h2>
 

@@ -35,6 +35,7 @@
       "PARAGRAPH_4": "Busco crescer profissionalmente e agregar valor a equipes dinâmicas, sempre aprendendo e evoluindo dia após dia 📈🔥."
     },
     "Projects" : {
+      "TITLE": "Trabalhos e Projetos",
       "Project_1": {
         "TITLE": "Github Finder",
         "DESCRIPTION": "Aplicação que busca o perfil de alguém no github utilizando seu username com tema dark e light."
@@ -57,6 +58,98 @@
         "TITLE": "Angular Task App",
         "DESCRIPTION": "Um gerenciador de tarefas pessoais desenvolvido todo em AngularJs"
       }
+    },
+    "Studies": {
+      "Study_1": {
+        "TITLE": "Bacharelado CC",
+        "DESCRIPTION": "Bacharelado em Ciência da Computação na Unip de Alphaville",
+        "TIME": "---",
+        "DATE": "Janeiro/2023 · Atualmente"
+      },
+      "Study_2": {
+        "TITLE": "JStack",
+        "DESCRIPTION": "Curso de ReactJs, StyledComponents e NodeJs ministrado por Mateus Silva",
+        "TIME": "---",
+        "DATE": "Janeiro/2022 · Atualmente"
+      },
+      "Study_3": {
+        "TITLE": "Desenvolvimento de Sistemas - ETEC",
+        "DESCRIPTION": "Curso técnico de Desenvolvimento de Sistemas, juntamente com o ensino médio",
+        "TIME": "3 anos",
+        "DATE": "Janeiro/2020 · Dezembro/2022"
+      },
+      "Study_4": {
+        "TITLE": "DankiCode",
+        "DESCRIPTION": "Curso de NodeJs ministrado por Guilherme Grillo",
+        "TIME": "6 Meses",
+        "DATE": "Junho/2021 · Dezembro/2022"
+      },
+      "Study_5": {
+        "TITLE": "EF SET 76/100",
+        "DESCRIPTION": "Certificado de teste de inglês online",
+        "TIME": "2 Meses",
+        "DATE": "Agosto/2022"
+      }
+    },
+    "Works": {
+      "Work_1": {
+        "TITLE": "Desenvolvedor front-end Jr II - Looplex",
+        "DESCRIPTION": "Trabalho como desenvolvedor front-end jr na empresa Looplex",
+        "TIME": "---",
+        "DATE": "Agosto/2023 · Atualmente"
+      },
+      "Work_2": {
+        "TITLE": "Garçom - Pesqueiro Arruda's",
+        "DESCRIPTION": "I work as a waiter and as the developer of the system used at Pesqueiro e Restaurante Arruda's",
+        "TIME": "---",
+        "DATE": "Janeiro/2021 · Atualmente"
+      },
+      "Work_3": {
+        "TITLE": "Desenvolvedor front-end - TecsaGroup",
+        "DESCRIPTION": "Trabalhei desenvolvendo funcionalidades em um e-commerce e no aplicativo",
+        "TIME": "4 meses",
+        "DATE": "Maio/2023 · Agosto/2023"
+      },
+      "Work_4": {
+        "TITLE": "Desenvolvedor mobile - ControlTracker",
+        "DESCRIPTION": "Trabalhei desenvolvendo funcionalidades em aplicativos nativos",
+        "TIME": "3 meses",
+        "DATE": "Novembro/2022 · Janeiro/2023"
+      },
+      "Work_5": {
+        "TITLE": "Desenvolvedor freelancer - WepTek",
+        "DESCRIPTION": "Trabalhei desenvolvendo diversas aplicações para diversos clientes",
+        "TIME": "4 meses",
+        "DATE": "Fevereiro/2023 · Maio/2023"
+      }
+    },
+    "Career": {
+      "CAREER": "💼 Carreira",
+      "CARRER_PATH": "Trajetória até aqui",
+      "PROFESSIONAL_AREA": "Área Profissional",
+      "PROFESSIONAL_SINCE": "2021 · Atualmente",
+      "ACADEMIC_AREA": "Área acadêmica",
+      "ACADEMIC_SINCE": "2020 · Atualmente"
+    },
+    "Skills": {
+      "TAG_TITLE": "🧑‍💻 Skills · Experiências",
+      "TITLE": "Tecnologias e habilidades",
+      "DAY_TECHS": "Techs que uso no dia a dia",
+      "OTHER_TECHS": "Outras techs com que já realizei projetos"
+    },
+    "Recomendations": {
+      "TAG_TITLE": "💬 Recomendações",
+      "TITLE": "Em depoimento",
+      "Recomendation_1": {
+        "CONTENT": "...Ademais, ele foi um excelente aluno, sempre agindo com respeito e sendo uma pessoa participativa nas aulas, além disso ele era um aluno pontual e assíduo nas aulas, obtendo um excelente aproveitamento em todas as avaliações referentes a matéria em que lecionei...!",
+        "ROLE": "Analista de sistemas"
+      }
+    },
+    "Contact": {
+      "TAG_TITLE": "📬 Contatos",
+      "TITLE": "Vamos conversar!",
+      "BACK": "Voltar ao topo",
+      "COPIED": "Email copiado!"
     }
   }
 }

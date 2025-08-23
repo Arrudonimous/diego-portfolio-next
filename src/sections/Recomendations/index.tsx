@@ -4,9 +4,11 @@ import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import { MdFormatQuote } from 'react-icons/md'
 import Card from '../../components/Card'
-import RecomendationsMock from '@/mocks/Recomendations'
+import { useRecomendations } from '@/mocks/Recomendations'
+import { useTranslations } from 'next-intl'
 
 export default function Recomendations() {
+  const RecomendationsMock = useRecomendations()
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slides: {
@@ -15,13 +17,14 @@ export default function Recomendations() {
     },
   })
 
+  const t = useTranslations('Default')
+  const T_PREFIX = "Recomendations."
+
   return (
     <div className="mt-16" id="Recomendations">
-      <Card text="💬 Recomendações" />
-      <h1 className="mt-4 font-extrabold text-white text-2xl md:hidden">Em</h1>
-      <h1 className="font-extrabold text-white text-2xl md:hidden">depoimento</h1>
-      <h1 className="font-extrabold text-white text-2xl hidden md:flex md:text-5xl md:mt-6">
-        Em depoimento
+      <Card text={t(T_PREFIX + "TAG_TITLE")} />
+      <h1 className="mt-4 font-extrabold text-white text-2xl md:text-5xl w-[8rem] md:w-auto">
+        {t(T_PREFIX + "TITLE")}
       </h1>
 
       <div className='w-full mt-6 md:hidden'>
