@@ -1,6 +1,5 @@
 
 import Experience from '@/sections/Experience';
-import '../../styles/main.css';
 import Header from '../Header';
 import AboutMe from '@/sections/AboutMe';
 import Potfólio from '@/sections/Portfolio';

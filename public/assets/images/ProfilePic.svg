@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg fill="none" height="204" viewBox="0 0 210 204" width="210" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M194.444 91.742C194.444 42.2293 154.399 2.09143 105 2.09143C55.6012 2.09143 15.5555 42.2293 15.5555 91.742C15.5555 141.255 55.6012 181.393 105 181.393C154.399 181.393 194.444 141.255 194.444 91.742Z" fill="#7B4AE2"/>
+<path d="M194.444 91.742C194.444 42.2293 154.399 2.09143 105 2.09143C55.6012 2.09143 15.5555 42.2293 15.5555 91.742C15.5555 141.255 55.6012 181.393 105 181.393C154.399 181.393 194.444 141.255 194.444 91.742Z" fill="#483AA0"/>
 <rect fill="url(#pattern0)" height="204" rx="102" width="210"/>
 <defs>
 <pattern height="1" id="pattern0" patternContentUnits="objectBoundingBox" width="1">

@@ -3,8 +3,8 @@
 
 @theme{
   --color-footer: rgba(123,74,226, 0.1);
-  --color-border: rgba(123,74,226, 0.5);
-  --color-text: #7B4AE2;
+  --color-border: #483AA0;
+  --color-text: #E3D095;
 
   --animate-spin-slow: spin 8s linear infinite;
 }
@@ -27,7 +27,7 @@ body::-webkit-scrollbar-track {
   border-radius: 5px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(120, 16, 120, 0.4);
+  background-color: #483AA0;
   border-radius: 14px;
   border: 3px solid rgba(23, 4, 23, 0.2);
 }

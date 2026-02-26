@@ -64,7 +64,7 @@ export default function Header() {
           onClick={toggleLocale}
           className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full border border-white/20 transition-all"
         >
-          {locale === 'en' ? (
+          {locale === 'pt' ? (
             <>
               <img src="/assets/flags/BrasilFlag.svg" alt="Português" width={24} height={24} />
               <span className="text-white text-sm font-medium">Português</span>
