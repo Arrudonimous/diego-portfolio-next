@@ -143,6 +143,10 @@
       "Recomendation_1": {
         "CONTENT": "...Moreover, he was an excellent student, always acting with respect and being participative in class. In addition, he was punctual and assiduous, achieving excellent performance in all the assessments of the subject I taught...!",
         "ROLE": "Systems Analyst"
+      },
+      "Recomendation_2": {
+        "CONTENT": "I had the opportunity to work with Diego Arruda on a simple project, and the experience was very positive. He demonstrated good organization, clear communication, and technical expertise in the proposed solutions. He is certainly a committed and reliable developer to work with in a team..",
+        "ROLE": "QA Engineer"
       }
     },
     "Contact": {

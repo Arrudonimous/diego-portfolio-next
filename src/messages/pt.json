@@ -143,6 +143,10 @@
       "Recomendation_1": {
         "CONTENT": "...Ademais, ele foi um excelente aluno, sempre agindo com respeito e sendo uma pessoa participativa nas aulas, além disso ele era um aluno pontual e assíduo nas aulas, obtendo um excelente aproveitamento em todas as avaliações referentes a matéria em que lecionei...!",
         "ROLE": "Analista de sistemas"
+      },
+      "Recomendation_2": {
+        "CONTENT": "Tive a oportunidade de contar com o apoio do Diego Arruda em um projeto simples, e a experiência foi muito positiva. Ele demonstrou boa organização, clareza na comunicação e domínio técnico nas soluções propostas. Com certeza é um desenvolvedor comprometido e confiável para trabalhar em equipe.",
+        "ROLE": "Engenheiro QA"
       }
     },
     "Contact": {
