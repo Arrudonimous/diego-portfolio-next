@@ -1,6 +1,6 @@
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai';
 
-export default function SocialMedias({toggleLocale, locale}) {
+export default function SocialMedias({ toggleLocale, locale }: { toggleLocale? : any, locale?: string}) {
   return (
     <div className='flex flex-row gap-4 opacity-50 mb-2 items-center'>
       <a href='https://github.com/Arrudonimous'>
@@ -14,30 +14,32 @@ export default function SocialMedias({toggleLocale, locale}) {
         <AiOutlineLinkedin size={30} color='#FFFFFF' />
       </a>
 
-      <button
-        onClick={toggleLocale}
-        className='flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full border border-white/20 transition-all'
-      >
-        {locale === 'pt' ? (
-          <>
-            <img
-              src='/assets/flags/BrasilFlag.svg'
-              alt='Português'
-              width={24}
-              height={24}
-            />
-          </>
-        ) : (
-          <>
-            <img
-              src='/assets/flags/UsaFlag.svg'
-              alt='English'
-              width={24}
-              height={24}
-            />
-          </>
-        )}
-      </button>
+      {toggleLocale && (
+        <button
+          onClick={toggleLocale}
+          className='flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full border border-white/20 transition-all'
+        >
+          {locale === 'pt' ? (
+            <>
+              <img
+                src='/assets/flags/BrasilFlag.svg'
+                alt='Português'
+                width={24}
+                height={24}
+              />
+            </>
+          ) : (
+            <>
+              <img
+                src='/assets/flags/UsaFlag.svg'
+                alt='English'
+                width={24}
+                height={24}
+              />
+            </>
+          )}
+        </button>
+      )}
     </div>
   );
 }
