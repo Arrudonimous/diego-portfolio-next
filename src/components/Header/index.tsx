@@ -81,8 +81,8 @@ export default function Header() {
       <div className="md:flex md:flex-row md:w-full md:justify-between md:mt-16 w-full">
         <div className="hover:scale-[1.01]">
           <div className="flex items-center justify-center m-0">
-            <img src="/assets/images/Background.svg" alt="" className="w-[18rem] md:h-[18rem] flex md:hidden absolute" />
-            <img src="/assets/images/Icons.png" alt="" className="absolute md:hidden animate-spin-slow opacity-50 w-[24rem]" />
+            <img src="/assets/images/Background.svg" alt="" className="w-[14rem] md:h-[18rem] flex md:hidden absolute" />
+            <img src="/assets/images/Icons.png" alt="" className="absolute md:hidden animate-spin-slow opacity-50 w-[18rem]" />
             <img src="/assets/images/Avatar.svg" alt="" className="md:hidden w-[14rem] mt-24 z-50" />
           </div>
         </div>
