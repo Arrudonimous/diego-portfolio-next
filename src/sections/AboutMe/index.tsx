@@ -9,19 +9,19 @@ export default function AboutMe() {
       id="About"
     >
       <img
-        src="./assets/images/ProfilePic.svg"
+        src="/assets/images/ProfilePic.svg"
         alt=""
         className="w-80 mb-8 hover:scale-[1.01] md:w-[50rem]"
       />
       <div className="w-full">
         <Card text={t('ABOUT_ME')} />
-        <h1 className="text-white font-extrabold text-2xl mt-16 mb-3 md:hidden">
+        <h2 className="font-display text-text-primary font-extrabold text-2xl mt-16 mb-3 md:hidden">
           Diego Arruda
-        </h1>
-        <h1 className="text-white font-extrabold text-5xl mt-16 mb-3 hidden md:flex">
+        </h2>
+        <h2 className="font-display text-text-primary font-extrabold text-5xl mt-16 mb-3 hidden md:flex">
           Diego de Veras Arruda 👨🏻‍💻
-        </h1>
-        <div className="flex flex-col font-medium text-lg text-white opacity-50 gap-3 md:mt-5">
+        </h2>
+        <div className="flex flex-col font-medium text-lg text-text-secondary gap-3 md:mt-5">
           <span className="block">
             {t('PARAGRAPH_1')}
           </span>

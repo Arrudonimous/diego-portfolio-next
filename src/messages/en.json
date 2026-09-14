@@ -10,6 +10,9 @@
         "CONTACTS": "Contact"
       },
       "HELLO": "Hello",
+      "ROLE": "FullStack Developer",
+      "PITCH": "Building fast, accessible web products with React, Next.js and TypeScript.",
+      "VIEW_WORK": "View my work",
       "DOWNLOAD_CV": "Download CV",
       "LETS_TALK": "Lets Talk"
     },
@@ -35,6 +38,7 @@
       "PARAGRAPH_4": "I aim to grow professionally and add value to dynamic teams, always learning and evolving day by day 📈🔥."
     },
     "Projects": {
+      "TAG_TITLE": "🔗 Portfolio",
       "TITLE": "Works and projects",
       "Project_1": {
         "TITLE": "Github Finder",
@@ -134,8 +138,9 @@
     "Skills": {
       "TAG_TITLE": "🧑‍💻 Skills · Experiences",
       "TITLE": "Techs and skills",
-      "DAY_TECHS": "Techs I use in my daily life",
-      "OTHER_TECHS": "Other techs I have already worked with on projects"
+      "DAY_TECHS": "Daily stack",
+      "TOOLS_TECHS": "Tools",
+      "LEARNING_TECHS": "Currently learning"
     },
     "Recomendations": {
       "TAG_TITLE": "💬 Recomendations",
@@ -152,6 +157,8 @@
     "Contact": {
       "TAG_TITLE": "📬 Contacts",
       "TITLE": "Lets talk!",
+      "EMAIL_LABEL": "E-mail:",
+      "COPY_EMAIL_ARIA": "Copy email",
       "BACK": "Back to top",
       "COPIED": "Email copied!"
     }

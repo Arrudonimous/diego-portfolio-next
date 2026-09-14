@@ -10,9 +10,10 @@ interface Project {
   cards: Card[];
   image: string;
   link: string;
+  featured: boolean;
 }
 
-export const useProjects = () => {
+export const useProjects = (): Project[] => {
   const t = useTranslations('Default.Projects')
 
   return [
@@ -25,6 +26,7 @@ export const useProjects = () => {
       ],
       image: '/assets/images/GithubFinder.png',
       link: 'https://github-finder-gamma-five.vercel.app',
+      featured: true,
     },
     {
       title: t('Project_2.TITLE'),
@@ -35,6 +37,7 @@ export const useProjects = () => {
       ],
       image: '/assets/images/AcquaBuilding.png',
       link: 'https://acqua-building.vercel.app',
+      featured: true,
     },
     {
       title: t('Project_3.TITLE'),
@@ -45,6 +48,7 @@ export const useProjects = () => {
       ],
       image: '/assets/images/Weather App.png',
       link: 'https://weather-app-two-liart.vercel.app',
+      featured: false,
     },
     {
       title: t('Project_4.TITLE'),
@@ -55,6 +59,7 @@ export const useProjects = () => {
       ],
       image: '/assets/images/DevTech.png',
       link: 'https://devtech.vercel.app',
+      featured: false,
     },
   ]
 }

@@ -1,128 +1,55 @@
 'use client'
 
-import { useKeenSlider } from 'keen-slider/react'
-import 'keen-slider/keen-slider.min.css'
 import Card from '../../components/Card'
+import ProjectCard from '../../components/ProjectCard'
 import { useProjects } from '@/mocks/Projects'
 import { useProjectsAngular } from '@/mocks/ProjectsAngular'
-import CardWork from '../../components/CardWork'
 import { useTranslations } from 'next-intl'
 
-export default function Portfólio() {
+export default function Portfolio() {
   const Projects = useProjects()
   const ProjectsAngular = useProjectsAngular()
-  const [sliderInstanceRef] = useKeenSlider<HTMLDivElement>({
-    loop: true,
-    mode: 'snap',
-    slides: {
-      perView: 1,
-      spacing: 30,
-    },
-  })
 
   const t = useTranslations("Default")
   const T_PREFIX = "Projects."
 
+  const featured = Projects.filter((item) => item.featured)
+  const compact = [
+    ...Projects.filter((item) => !item.featured),
+    ...ProjectsAngular,
+  ]
+
   return (
     <div className="flex mt-24 flex-col md:mt-32" id="Portfolio">
-      <Card text="🔗 Portfólio" />
+      <Card text={t(T_PREFIX + "TAG_TITLE")} />
 
-      <h1 className="mt-4 font-extrabold text-white text-2xl md:text-5xl w-[8rem] md:w-auto">{t(T_PREFIX + "TITLE")}</h1>
+      <h2 className="mt-4 font-display font-extrabold text-text-primary text-2xl md:text-5xl w-[8rem] md:w-auto">{t(T_PREFIX + "TITLE")}</h2>
 
-      <h2 className="font-extrabold text-white text-xl flex md:text-3xl mt-8 md:mt-0">React.js/Next.js</h2>
-
-      <div className='w-full md:hidden lg:hidden'>
-        <div ref={sliderInstanceRef} className="keen-slider">
-          {Projects.map((item, idx) => (
-            <div key={idx} className="keen-slider__slide number-slide flex">
-              <div className="border-2 rounded-lg border-border py-7 px-6 text-white mt-7 hover:scale-[1.01] w-full">
-                <a href={item.link}>
-                  <h1 className="font-bold">{item.title}</h1>
-                  <span className="font-medium text-sm opacity-50 flex my-2">
-                    {item.description}
-                  </span>
-                  <div className="flex flex-row gap-1 mb-4">
-                    {item.cards.map((value, i) => (
-                      <Card key={i} text={value.name} />
-                    ))}
-                  </div>
-                  <img src={item.image} alt="" className="w-full rounded-lg" />
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="md:grid hidden grid-cols-4 gap-16">
-        {Projects.map((item, idx) => (
-          <div key={idx} className="border-2 rounded-lg border-border py-6 px-8 text-white mt-7 hover:scale-[1.01] md:w-[18rem] hidden md:flex">
-            <a href={item.link} className="flex flex-col justify-between">
-              <div>
-                <h1 className="font-bold text-xl mb-2">{item.title}</h1>
-                <span className="font-medium text-base opacity-50 flex mb-20">
-                  {item.description}
-                </span>
-              </div>
-              <div>
-                <div className="flex flex-row gap-3 mb-5">
-                  {item.cards.map((value, i) => (
-                    <CardWork key={i} text={value.name} />
-                  ))}
-                </div>
-                <img src={item.image} alt="" className="w-full rounded-lg" />
-              </div>
-            </a>
-          </div>
+      <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-2 md:gap-8">
+        {featured.map((item, idx) => (
+          <ProjectCard
+            key={idx}
+            variant="featured"
+            title={item.title}
+            description={item.description}
+            image={item.image}
+            link={item.link}
+            cards={item.cards}
+          />
         ))}
       </div>
 
-
-      <h2 className="font-extrabold text-white text-xl flex mt-8 md:text-3xl">Angular.js</h2>
-
-      <div className='w-full md:hidden lg:hidden'>
-        <div ref={sliderInstanceRef} className="keen-slider">
-          {ProjectsAngular.map((item, idx) => (
-            <div key={idx} className="keen-slider__slide number-slide flex">
-              <div className="border-2 rounded-lg border-border py-7 px-6 text-white mt-7 hover:scale-[1.01] w-full">
-                <a href={item.link}>
-                  <h1 className="font-bold">{item.title}</h1>
-                  <span className="font-medium text-sm opacity-50 flex my-2">
-                    {item.description}
-                  </span>
-                  <div className="flex flex-row gap-1 mb-4">
-                    {item.cards.map((value, i) => (
-                      <Card key={i} text={value.name} />
-                    ))}
-                  </div>
-                  <img src={item.image} alt="" className="w-full rounded-lg" />
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="md:grid hidden grid-cols-4 gap-16">
-        {ProjectsAngular.map((item, idx) => (
-          <div key={idx} className="border-2 rounded-lg border-border py-6 px-8 text-white mt-7 hover:scale-[1.01] md:w-[18rem] hidden md:flex">
-            <a href={item.link} className="flex flex-col justify-between">
-              <div>
-                <h1 className="font-bold text-xl mb-2">{item.title}</h1>
-                <span className="font-medium text-base opacity-50 flex mb-20">
-                  {item.description}
-                </span>
-              </div>
-              <div>
-                <div className="flex flex-row gap-3 mb-5">
-                  {item.cards.map((value, i) => (
-                    <CardWork key={i} text={value.name} />
-                  ))}
-                </div>
-                <img src={item.image} alt="" className="w-full rounded-lg" />
-              </div>
-            </a>
-          </div>
+      <div className="grid grid-cols-1 gap-5 mt-6 sm:grid-cols-2 lg:grid-cols-3">
+        {compact.map((item, idx) => (
+          <ProjectCard
+            key={idx}
+            variant="compact"
+            title={item.title}
+            description={item.description}
+            image={item.image}
+            link={item.link}
+            cards={item.cards}
+          />
         ))}
       </div>
     </div>
