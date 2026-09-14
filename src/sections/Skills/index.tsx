@@ -1,7 +1,7 @@
 'use client'
 
 import {
-  SiReact, SiJavascript, SiTypescript, SiTailwindcss, SiCss3, SiHtml5, SiGithub,
+  SiReact, SiJavascript, SiTypescript, SiTailwindcss, SiCss, SiHtml5, SiGithub,
   SiInsomnia, SiFigma, SiDocker, SiMongodb,
 } from 'react-icons/si'
 import { IoLogoNodejs } from 'react-icons/io5'
@@ -57,7 +57,7 @@ export default function Skills() {
           <div className="keen-slider__slide flex justify-center items-center"><SiTypescript size={50} className="rounded-lg" /></div>
           <div className="keen-slider__slide flex justify-center items-center"><IoLogoNodejs size={55} /></div>
           <div className="keen-slider__slide flex justify-center items-center"><SiTailwindcss size={50} /></div>
-          <div className="keen-slider__slide flex justify-center items-center"><SiCss3 size={50} /></div>
+          <div className="keen-slider__slide flex justify-center items-center"><SiCss size={50} /></div>
           <div className="keen-slider__slide flex justify-center items-center"><SiHtml5 size={50} /></div>
           <div className="keen-slider__slide flex justify-center items-center"><SiGithub size={50} /></div>
           <div className="keen-slider__slide flex justify-center items-center"><SiInsomnia size={50} /></div>
@@ -70,7 +70,7 @@ export default function Skills() {
         <SiTypescript size={70} className="rounded-lg hover:scale-[1.1] opacity-50 hover:opacity-100 transition-all duration-200" />
         <IoLogoNodejs size={75} className="hover:scale-[1.1] opacity-50 hover:opacity-100 transition-all duration-200" />
         <SiTailwindcss size={70} className="hover:scale-[1.1] opacity-50 hover:opacity-100 " />
-        <SiCss3 size={70} className="hover:scale-[1.1] opacity-50 hover:opacity-100 transition-all duration-200" />
+        <SiCss size={70} className="hover:scale-[1.1] opacity-50 hover:opacity-100 transition-all duration-200" />
         <SiHtml5 size={70} className="hover:scale-[1.1] opacity-50 hover:opacity-100 transition-all duration-200" />
         <SiGithub size={70} className="hover:scale-[1.1] opacity-50 hover:opacity-100 transition-all duration-200" />
         <SiInsomnia size={70} className="hover:scale-[1.1] opacity-50 hover:opacity-100 transition-all duration-200" />
