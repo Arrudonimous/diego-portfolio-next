@@ -12,7 +12,7 @@ interface Project {
   link: string;
 }
 
-export const useProjectsAngular = () => {
+export const useProjectsAngular = (): Project[] => {
   const t = useTranslations('Default.ProjectsAngular')
 
   return [
@@ -28,18 +28,3 @@ export const useProjectsAngular = () => {
     }
   ]
 }
-
-const projectsAngular: Project[] = [
-  {
-    title: 'Angular Task App',
-    description: 'Um gerenciador de tarefas pessoais desenvolvido todo em AngularJs',
-    cards: [
-      { name: 'AngularJs' },
-      { name: 'SCSS' },
-    ],
-    image: '/assets/images/AngularTaskApp.png',
-    link: 'https://tasks-list-angular.vercel.app',
-  }
-];
-
-export default projectsAngular;
