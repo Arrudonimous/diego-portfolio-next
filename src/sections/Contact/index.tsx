@@ -19,7 +19,7 @@ export default function Contact() {
       setCopy(true);
       setTimeout(() => setCopy(false), 2000);
     } catch (err) {
-      console.error('Erro ao copiar:', err);
+      console.error('Error copying email:', err);
     }
   }
 
@@ -29,35 +29,35 @@ export default function Contact() {
       id="Contacts"
     >
       <CardWork text={t(T_PREFIX + "TAG_TITLE")} />
-      <h1 className="mt-4 font-extrabold text-white text-2xl md:text-5xl w-[8rem] md:w-auto">
+      <h2 className="mt-4 font-display font-extrabold text-text-primary text-2xl md:text-5xl w-[8rem] md:w-auto">
         {t(T_PREFIX + "TITLE")}
-      </h1>
+      </h2>
 
       <div className="md:flex md:flex-row md:items-center md:gap-10 md:mt-16">
-        <div className="w-[12rem] md:flex mt-6 opacity-50">
+        <div className="w-[12rem] md:flex mt-6">
           <LinkInstagram />
         </div>
         <div className="md:flex md:items-center md:flex-col">
-          <h1 className="text-text mt-4 mb-1 font-medium md:text-xl">E-mail:</h1>
+          <span className="text-primary mt-4 mb-1 font-medium md:text-xl block">{t(T_PREFIX + "EMAIL_LABEL")}</span>
           <div className="flex flex-row items-center gap-2 md:flex-col">
-            <span className="text-white opacity-50 md:text-xl">{email}</span>
+            <span className="text-text-secondary md:text-xl">{email}</span>
             <button
-              className="hover:cursor-pointer"
+              className="hover:cursor-pointer text-primary"
               onClick={handleCopy}
-              aria-label="Copiar e-mail"
+              aria-label={t(T_PREFIX + "COPY_EMAIL_ARIA")}
             >
-              <IoCopy size={20} color="#7B4AE2" />
+              <IoCopy size={20} />
             </button>
-            {copy && <span className="text-text">{t(T_PREFIX + "COPIED")}</span>}
+            {copy && <span className="text-primary">{t(T_PREFIX + "COPIED")}</span>}
           </div>
         </div>
       </div>
 
       <a
         href="#Header"
-        className="flex flex-row items-center text-text font-semibold my-16 hover:cursor-pointer opacity-50"
+        className="flex flex-row items-center text-primary font-semibold my-16 hover:cursor-pointer"
       >
-        <h1>{t(T_PREFIX + "BACK")}</h1>
+        <span>{t(T_PREFIX + "BACK")}</span>
         <FaArrowTurnUp size={20} className="flex" />
       </a>
     </div>
