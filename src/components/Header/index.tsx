@@ -5,7 +5,6 @@ import SocialMedias from '../SocialMedias'
 import Card from '../Card'
 import LinkInstagram from '../LinkInstagram'
 import { usePathname, useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
 
 export default function Header() {
@@ -14,35 +13,27 @@ export default function Header() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const [locale, setLocale] = useState<'pt' | 'en'>('pt')
+  const segments = pathname.split('/')
+  const locale: 'pt' | 'en' = segments[1] === 'en' ? 'en' : 'pt'
 
   const switchLocale = (newLocale: 'pt' | 'en') => {
-    const segments = pathname.split('/')
+    const nextSegments = pathname.split('/')
 
-    const isValidLocale = ['pt', 'en'].includes(segments[1])
+    const isValidLocale = ['pt', 'en'].includes(nextSegments[1])
     if (isValidLocale) {
-      segments[1] = newLocale
+      nextSegments[1] = newLocale
     } else {
-      segments.splice(1, 0, newLocale)
+      nextSegments.splice(1, 0, newLocale)
     }
 
-    const newPath = segments.join('/') || '/'
+    const newPath = nextSegments.join('/') || '/'
     router.replace(newPath)
   }
 
   const toggleLocale = () => {
     const newLocale: 'pt' | 'en' = locale === 'pt' ? 'en' : 'pt'
-    setLocale(newLocale)
     switchLocale(newLocale)
   }
-
-  useEffect(() => {
-    const segments = pathname.split('/')
-    const current = segments[1]
-    if (current === 'pt' || current === 'en') {
-      setLocale(current)
-    }
-  }, [pathname])
 
   return (
     <div className='flex items-center justify-center flex-col' id='Header'>

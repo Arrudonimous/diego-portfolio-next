@@ -1,6 +1,6 @@
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai';
 
-export default function SocialMedias({ toggleLocale, locale }: { toggleLocale? : any, locale?: string}) {
+export default function SocialMedias({ toggleLocale, locale }: { toggleLocale?: () => void, locale?: string}) {
   return (
     <div className='flex flex-row gap-4 opacity-50 mb-2 items-center'>
       <a href='https://github.com/Arrudonimous'>
