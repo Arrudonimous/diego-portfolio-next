@@ -1,10 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-@theme{
-  --color-footer: rgba(123,74,226, 0.1);
-  --color-border: rgba(123,74,226, 0.5);
-  --color-text: #7B4AE2;
+@theme {
+  --color-bg: #0B0F17;
+  --color-surface: #131926;
+  --color-primary: #8B5CF6;
+  --color-primary-soft: rgba(139, 92, 246, 0.12);
+  --color-accent: #F2B84B;
+  --color-text-primary: #F5F5F7;
+  --color-text-secondary: #A8AFBD;
+
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
 
   --animate-spin-slow: spin 8s linear infinite;
 }
@@ -14,8 +21,26 @@ html {
 }
 
 body {
-  font-family: var(--font-geist-sans), 'Roboto', sans-serif;
+  font-family: var(--font-sans);
   overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* Scrollbar personalizada */
@@ -23,11 +48,11 @@ body::-webkit-scrollbar {
   width: 10px;
 }
 body::-webkit-scrollbar-track {
-  background: rgba(23, 4, 23, 0.1);
+  background: var(--color-bg);
   border-radius: 5px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(120, 16, 120, 0.4);
+  background-color: var(--color-primary-soft);
   border-radius: 14px;
-  border: 3px solid rgba(23, 4, 23, 0.2);
+  border: 3px solid var(--color-bg);
 }
