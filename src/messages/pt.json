@@ -10,6 +10,9 @@
         "CONTACTS": "Contatos"
       },
       "HELLO": "Olá",
+      "ROLE": "Desenvolvedor FullStack",
+      "PITCH": "Construindo produtos web rápidos e acessíveis com React, Next.js e TypeScript.",
+      "VIEW_WORK": "Ver meus projetos",
       "DOWNLOAD_CV": "Baixar CV",
       "LETS_TALK": "Vamos Conversar"
     },
@@ -35,6 +38,7 @@
       "PARAGRAPH_4": "Busco crescer profissionalmente e agregar valor a equipes dinâmicas, sempre aprendendo e evoluindo dia após dia 📈🔥."
     },
     "Projects" : {
+      "TAG_TITLE": "🔗 Portfólio",
       "TITLE": "Trabalhos e Projetos",
       "Project_1": {
         "TITLE": "Github Finder",
@@ -100,7 +104,7 @@
       },
       "Work_2": {
         "TITLE": "Garçom - Pesqueiro Arruda's",
-        "DESCRIPTION": "I work as a waiter and as the developer of the system used at Pesqueiro e Restaurante Arruda's",
+        "DESCRIPTION": "Trabalho como garçom e também como desenvolvedor do sistema utilizado no Pesqueiro e Restaurante Arruda's",
         "TIME": "---",
         "DATE": "Janeiro/2021 · Atualmente"
       },
@@ -134,8 +138,9 @@
     "Skills": {
       "TAG_TITLE": "🧑‍💻 Skills · Experiências",
       "TITLE": "Tecnologias e habilidades",
-      "DAY_TECHS": "Techs que uso no dia a dia",
-      "OTHER_TECHS": "Outras techs com que já realizei projetos"
+      "DAY_TECHS": "Techs do dia a dia",
+      "TOOLS_TECHS": "Ferramentas",
+      "LEARNING_TECHS": "Estudando atualmente"
     },
     "Recomendations": {
       "TAG_TITLE": "💬 Recomendações",
@@ -143,11 +148,17 @@
       "Recomendation_1": {
         "CONTENT": "...Ademais, ele foi um excelente aluno, sempre agindo com respeito e sendo uma pessoa participativa nas aulas, além disso ele era um aluno pontual e assíduo nas aulas, obtendo um excelente aproveitamento em todas as avaliações referentes a matéria em que lecionei...!",
         "ROLE": "Analista de sistemas"
+      },
+      "Recomendation_2": {
+        "CONTENT": "Tive a oportunidade de contar com o apoio do Diego Arruda em um projeto simples, e a experiência foi muito positiva. Ele demonstrou boa organização, clareza na comunicação e domínio técnico nas soluções propostas. Com certeza é um desenvolvedor comprometido e confiável para trabalhar em equipe.",
+        "ROLE": "Engenheiro QA"
       }
     },
     "Contact": {
       "TAG_TITLE": "📬 Contatos",
       "TITLE": "Vamos conversar!",
+      "EMAIL_LABEL": "E-mail:",
+      "COPY_EMAIL_ARIA": "Copiar e-mail",
       "BACK": "Voltar ao topo",
       "COPIED": "Email copiado!"
     }
