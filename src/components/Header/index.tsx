@@ -1,18 +1,20 @@
 'use client'
-import { BiArrowToBottom } from 'react-icons/bi'
 import { FiArrowDown } from 'react-icons/fi'
 import SocialMedias from '../SocialMedias'
 import Card from '../Card'
 import LinkInstagram from '../LinkInstagram'
+import CodeEditorPanel from './CodeEditorPanel'
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
+import { motion, useReducedMotion, Variants } from 'framer-motion'
 
 export default function Header() {
   const t = useTranslations('Default')
   const T_PREFIX_NAVBAR = 'Header.Nav.'
   const router = useRouter();
   const pathname = usePathname();
+  const shouldReduceMotion = useReducedMotion()
 
   const [locale, setLocale] = useState<'pt' | 'en'>('pt')
 
@@ -28,6 +30,7 @@ export default function Header() {
 
     const newPath = segments.join('/') || '/'
     router.replace(newPath)
+    router.refresh()
   }
 
   const toggleLocale = () => {
@@ -44,93 +47,105 @@ export default function Header() {
     }
   }, [pathname])
 
+  const container: Variants = {
+    hidden: {},
+    show: {
+      transition: shouldReduceMotion ? {} : { staggerChildren: 0.12 },
+    },
+  }
+
+  const item: Variants = {
+    hidden: shouldReduceMotion ? {} : { opacity: 0, y: 16 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+  }
+
   return (
     <div className="flex items-center justify-center flex-col" id="Header">
       <div className="md:hidden">
         <SocialMedias />
       </div>
 
-      <nav className="bg-footer w-full items-center py-3 rounded-2xl justify-center hidden md:flex gap-24">
-        <ul className="flex flex-row gap-10 text-white opacity-50 text-lg">
-          <a href="#Home" className="text-text font-bold hover:cursor-pointer hover:opacity-80">{t(T_PREFIX_NAVBAR + 'HOME')}</a>
-          <a href="#About" className="hover:cursor-pointer hover:opacity-80">{t(T_PREFIX_NAVBAR + 'ABOUT')}</a>
-          <a href="#Portfolio" className="hover:cursor-pointer hover:opacity-80">{t(T_PREFIX_NAVBAR + 'PORTFOLIO')}</a>
-          <a href="#Skills" className="hover:cursor-pointer hover:opacity-80">{t(T_PREFIX_NAVBAR + 'SKILLS')}</a>
-          <a href="#Recomendations" className="hover:cursor-pointer hover:opacity-80">{t(T_PREFIX_NAVBAR + 'RECOMENDATIONS')}</a>
-          <a href="#Contacts" className="hover:cursor-pointer hover:opacity-80">{t(T_PREFIX_NAVBAR + 'CONTACTS')}</a>
+      <nav className="bg-surface w-full items-center py-3 rounded-2xl justify-center hidden md:flex gap-24">
+        <ul className="flex flex-row gap-10 text-text-secondary text-lg">
+          <li><a href="#Home" className="text-primary font-bold hover:cursor-pointer hover:text-text-primary transition-colors">{t(T_PREFIX_NAVBAR + 'HOME')}</a></li>
+          <li><a href="#About" className="hover:cursor-pointer hover:text-text-primary transition-colors">{t(T_PREFIX_NAVBAR + 'ABOUT')}</a></li>
+          <li><a href="#Portfolio" className="hover:cursor-pointer hover:text-text-primary transition-colors">{t(T_PREFIX_NAVBAR + 'PORTFOLIO')}</a></li>
+          <li><a href="#Skills" className="hover:cursor-pointer hover:text-text-primary transition-colors">{t(T_PREFIX_NAVBAR + 'SKILLS')}</a></li>
+          <li><a href="#Recomendations" className="hover:cursor-pointer hover:text-text-primary transition-colors">{t(T_PREFIX_NAVBAR + 'RECOMENDATIONS')}</a></li>
+          <li><a href="#Contacts" className="hover:cursor-pointer hover:text-text-primary transition-colors">{t(T_PREFIX_NAVBAR + 'CONTACTS')}</a></li>
         </ul>
 
         <button
           onClick={toggleLocale}
-          className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full border border-white/20 transition-all"
+          className="flex items-center gap-2 px-4 py-2 bg-primary-soft hover:bg-primary/20 rounded-full border border-primary-soft transition-all"
         >
           {locale === 'en' ? (
             <>
               <img src="/assets/flags/BrasilFlag.svg" alt="Português" width={24} height={24} />
-              <span className="text-white text-sm font-medium">Português</span>
+              <span className="text-text-primary text-sm font-medium">Português</span>
             </>
           ) : (
             <>
               <img src="/assets/flags/UsaFlag.svg" alt="English" width={24} height={24} />
-              <span className="text-white text-sm font-medium">English</span>
+              <span className="text-text-primary text-sm font-medium">English</span>
             </>
           )}
         </button>
       </nav>
 
-      <div className="md:flex md:flex-row md:w-full md:justify-between md:mt-16 w-full">
-        <div className="hover:scale-[1.01]">
-          <div className="flex items-center justify-center m-0">
-            <img src="/assets/images/Background.svg" alt="" className="w-[18rem] md:h-[18rem] flex md:hidden absolute" />
-            <img src="/assets/images/Icons.png" alt="" className="absolute md:hidden animate-spin-slow opacity-50 w-[24rem]" />
-            <img src="/assets/images/Avatar.svg" alt="" className="md:hidden w-[14rem] mt-24 z-50" />
-          </div>
-        </div>
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="w-full mt-10 md:mt-20 md:flex md:flex-row md:items-center md:justify-between md:gap-16"
+      >
+        <div className="md:w-1/2 flex flex-col">
+          <motion.div variants={item}>
+            <Card text={`👋 ${t('Header.HELLO')}`} />
+          </motion.div>
 
-        <div className="md:flex w-full mt-9 md:w-1/3 md:mt-0 md:flex-col md:justify-center">
-          <Card text={`👋 ${t('Header.HELLO')}`} />
-          <h1 className="text-white font-extrabold text-5xl md:text-[3.25rem] mt-4">Diego</h1>
-          <h1 className="text-white font-extrabold text-5xl mb-1">Arruda</h1>
-          <span className="text-white opacity-50 text-lg md:text-xl md:mt-4 md:mb-6">FullStack Developer</span>
-          <div className="hidden md:flex">
-            <SocialMedias />
-          </div>
-        </div>
+          <motion.h1 variants={item} className="font-display text-text-primary font-extrabold text-5xl md:text-[3.5rem] mt-4 leading-none">
+            Diego Arruda
+          </motion.h1>
 
-        <div className="-mt-5 ml-5 md:ml-0 hover:scale-[1.01] md:mt-0">
-          <div className="flex justify-center">
-            <div className="hidden md:flex">
-              <img src="/assets/images/Background.svg" alt="" className="w-[24rem] md:h-[24rem] hidden md:flex absolute" />
-              <img src="/assets/images/Icons.png" alt="" className="absolute hidden md:flex animate-spin-slow opacity-50" />
-            </div>
-            <img src="/assets/images/Avatar.svg" alt="" className="hidden md:flex w-[24rem] md:h-[24rem] z-50 mt-14 ml-1" />
-          </div>
-        </div>
+          <motion.span variants={item} className="text-primary font-semibold text-lg md:text-xl mt-3 block">
+            {t('Header.ROLE')}
+          </motion.span>
 
-        <div className="flex w-full mt-10 flex-row items-center md:items-end text-text opacity-80 md:mt-0 md:justify-center md:w-1/3 md:flex-col md:gap-2">
-          <div className="flex flex-row hover:cursor-pointer">
+          <motion.p variants={item} className="text-text-secondary text-base md:text-lg mt-3 max-w-md">
+            {t('Header.PITCH')}
+          </motion.p>
+
+          <motion.div variants={item} className="flex flex-row flex-wrap items-center gap-4 mt-8">
+            <a
+              href="#Portfolio"
+              className="bg-primary text-text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+            >
+              {t('Header.VIEW_WORK')}
+            </a>
             <a
               href="https://drive.google.com/file/d/162HDua0i-XvOKIORHcX3fe7G14mIlFXr/view?usp=sharing"
               target="_blank"
-              className="font-semibold text-base"
               rel="noreferrer"
+              className="border-2 border-primary-soft text-text-primary font-semibold px-6 py-3 rounded-lg hover:border-primary transition-colors"
             >
               {t('Header.DOWNLOAD_CV')}
             </a>
-            <BiArrowToBottom size={25} className="flex mr-4" />
-          </div>
-          <LinkInstagram />
+          </motion.div>
+
+          <motion.div variants={item} className="hidden md:flex items-center gap-4 mt-8">
+            <SocialMedias />
+            <LinkInstagram />
+          </motion.div>
         </div>
 
-        <div className="flex items-center justify-center md:hidden">
-          <a href="#About" className="flex bg-footer p-4 rounded-[6rem] border-2 border-border mt-8 text-text animate-bounce hover:cursor-pointer">
-            <FiArrowDown size={30} />
-          </a>
-        </div>
-      </div>
+        <motion.div variants={item} className="mt-10 md:mt-0 md:w-1/2 flex justify-center">
+          <CodeEditorPanel />
+        </motion.div>
+      </motion.div>
 
-      <div className="md:flex items-center justify-center hidden mt-5 md:mb-44">
-        <a href="#About" className="flex bg-footer p-4 rounded-[6rem] border-2 border-border mt-8 text-text animate-bounce hover:cursor-pointer">
+      <div className="flex items-center justify-center mt-10 md:mt-16 md:mb-24">
+        <a href="#About" className="flex bg-primary-soft p-4 rounded-[6rem] border-2 border-primary-soft text-primary animate-bounce hover:cursor-pointer">
           <FiArrowDown size={30} />
         </a>
       </div>
