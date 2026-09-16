@@ -55,6 +55,10 @@
       "Project_4": {
         "TITLE": "DevTech",
         "DESCRIPTION": "Landing page for a fictional company."
+      },
+      "Project_5": {
+        "TITLE": "Pesqueiro Arruda's",
+        "DESCRIPTION": "Live business site for a fishing resort, with online booking, deposit payments via InfinitePay (webhook with server-side reconfirmation), and a menu synced with the admin dashboard."
       }
     },
     "ProjectsAngular": {

@@ -55,6 +55,10 @@
       "Project_4": {
         "TITLE": "DevTech",
         "DESCRIPTION": "LandingPage para uma empresa fictícia"
+      },
+      "Project_5": {
+        "TITLE": "Pesqueiro Arruda's",
+        "DESCRIPTION": "Site institucional de um pesque-pague em produção, com reservas online, sinal via InfinitePay (webhook com reconfirmação server-side) e cardápio sincronizado com o painel administrativo."
       }
     },
     "ProjectsAngular": {

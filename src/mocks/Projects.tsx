@@ -37,7 +37,7 @@ export const useProjects = (): Project[] => {
       ],
       image: '/assets/images/AcquaBuilding.png',
       link: 'https://acqua-building.vercel.app',
-      featured: true,
+      featured: false,
     },
     {
       title: t('Project_3.TITLE'),
@@ -60,6 +60,19 @@ export const useProjects = (): Project[] => {
       image: '/assets/images/DevTech.png',
       link: 'https://devtech.vercel.app',
       featured: false,
+    },
+    {
+      title: t('Project_5.TITLE'),
+      description: t('Project_5.DESCRIPTION'),
+      cards: [
+        { name: 'Next.js' },
+        { name: 'TypeScript' },
+        { name: 'Supabase' },
+        { name: 'Tailwind CSS' },
+      ],
+      image: '/assets/images/PesqueiroArruda.png',
+      link: 'https://www.pesqueiroarruda.com.br/',
+      featured: true,
     },
   ]
 }
