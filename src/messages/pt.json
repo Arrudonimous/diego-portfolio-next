@@ -58,7 +58,7 @@
       },
       "Project_5": {
         "TITLE": "Pesqueiro Arruda's",
-        "DESCRIPTION": "Site institucional de um pesque-pague em produção, com reservas online, sinal via InfinitePay (webhook com reconfirmação server-side) e cardápio sincronizado com o painel administrativo."
+        "DESCRIPTION": "Plataforma de restaurante e reservas em produção, desenvolvida sozinho para o negócio da minha família."
       }
     },
     "ProjectsAngular": {
@@ -165,6 +165,62 @@
       "COPY_EMAIL_ARIA": "Copiar e-mail",
       "BACK": "Voltar ao topo",
       "COPIED": "Email copiado!"
+    }
+  },
+  "CaseStudies": {
+    "PesqueiroArruda": {
+      "BACK_LABEL": "← Voltar ao portfólio",
+      "TAG": "Estudo de Caso",
+      "TITLE": "Pesqueiro Arruda's — Plataforma de Restaurante e Reservas",
+      "SUBTITLE": "Sistema real, em produção, para um pesque-pague e restaurante da família — desenvolvido e mantido sozinho, em paralelo ao emprego CLT.",
+      "OVERVIEW_TITLE": "Visão geral",
+      "OVERVIEW": "O Pesqueiro Arruda's é um pesque-pague e restaurante administrado pela minha família. Desenvolvi o sistema que roda a operação diária do negócio e o site público de reservas, e sigo mantendo os dois até hoje.",
+      "PROBLEM_TITLE": "O problema",
+      "PROBLEM": "Antes do sistema, comandas e pedidos eram controlados no papel, não havia controle digital de estoque, e não existia forma de reservar mesa ou pagar sinal online.",
+      "SYSTEMS_TITLE": "O que construí",
+      "SYSTEMS_INTRO": "Três sistemas conectados, cada um com deploy e evolução independentes.",
+      "SYSTEMS": {
+        "BACKEND": {
+          "TITLE": "Backend",
+          "STACK": "Node.js, Express, MongoDB, Socket.IO, JWT, AWS S3",
+          "DESCRIPTION": "A API e fonte oficial de dados de produtos, estoque, pedidos e pagamentos. Socket.IO envia atualizações em tempo real para todos os clientes conectados; JWT protege a API; mídia é armazenada na AWS S3."
+        },
+        "ADMIN": {
+          "TITLE": "App de operação",
+          "STACK": "Next.js, TypeScript, Chakra UI, Socket.IO, dnd-kit",
+          "DESCRIPTION": "Usado pela equipe no salão, na cozinha e no caixa. Gerencia comandas, fila de pedidos da cozinha em tempo real, checkout e estoque, com reordenação drag-and-drop. Conversa com o backend via REST e Socket.IO, então um novo pedido aparece na cozinha instantaneamente."
+        },
+        "SITE": {
+          "TITLE": "Site público",
+          "STACK": "Next.js, TypeScript, Tailwind CSS, InfinitePay, Resend, Zod",
+          "DESCRIPTION": "Reservas de mesa online e pagamento de sinal via InfinitePay, com validação via Zod e confirmação por e-mail via Resend."
+        }
+      },
+      "DECISIONS_TITLE": "Decisões técnicas",
+      "DECISIONS": [
+        {
+          "TITLE": "Webhook, mas com verificação server-side",
+          "DESCRIPTION": "O InfinitePay confirma um sinal via webhook, mas o backend reconfirma o pagamento diretamente na API do InfinitePay antes de marcar a reserva como paga — o payload do webhook sozinho não é confiado."
+        },
+        {
+          "TITLE": "Tempo real em vez de polling",
+          "DESCRIPTION": "Cozinha e caixa rodam sobre Socket.IO, então todo dispositivo reflete o estado atual de um pedido imediatamente, sem precisar atualizar a página ou fazer polling na API."
+        },
+        {
+          "TITLE": "Uma fonte única de verdade pro catálogo",
+          "DESCRIPTION": "O site público não mantém uma cópia própria do cardápio — o cardápio digital (em andamento) lê os produtos direto do backend operacional, evitando que estoque e preço fiquem dessincronizados entre sistemas."
+        },
+        {
+          "TITLE": "Três deployables, um sistema só",
+          "DESCRIPTION": "Separar o app interno de operação do site público permite lançar funcionalidades pro time sem mexer na disponibilidade do site público, e vice-versa."
+        }
+      ],
+      "RESULT_TITLE": "Resultado",
+      "RESULT": "Em uso diário pela equipe para operar salão, cozinha e caixa, e pelos clientes para reservar mesas e pagar sinal online.",
+      "NEXT_STEPS_TITLE": "Próximos passos",
+      "NEXT_STEPS": "Cardápio digital embutido no site público, sincronizado em tempo real com o catálogo do backend — spec já escrita, implementação em andamento.",
+      "LIVE_LINK_LABEL": "Ver site no ar ↗",
+      "CODE_LINK_LABEL": "Ver código — Landing Page ↗"
     }
   }
 }

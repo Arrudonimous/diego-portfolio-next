@@ -11,6 +11,7 @@ interface Project {
   image: string;
   link: string;
   featured: boolean;
+  caseStudyLink?: string;
 }
 
 export const useProjects = (): Project[] => {
@@ -73,6 +74,7 @@ export const useProjects = (): Project[] => {
       image: '/assets/images/PesqueiroArruda.png',
       link: 'https://www.pesqueiroarruda.com.br/',
       featured: true,
+      caseStudyLink: '/projects/pesqueiro-arruda',
     },
   ]
 }

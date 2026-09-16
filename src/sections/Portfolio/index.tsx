@@ -12,6 +12,7 @@ export default function Portfolio() {
 
   const t = useTranslations("Default")
   const T_PREFIX = "Projects."
+  const tCaseStudy = useTranslations("CaseStudies.PesqueiroArruda")
 
   const featured = Projects.filter((item) => item.featured)
   const compact = [
@@ -35,6 +36,8 @@ export default function Portfolio() {
             image={item.image}
             link={item.link}
             cards={item.cards}
+            caseStudyLink={item.caseStudyLink}
+            visitLiveSiteLabel={item.caseStudyLink ? tCaseStudy('LIVE_LINK_LABEL') : undefined}
           />
         ))}
       </div>

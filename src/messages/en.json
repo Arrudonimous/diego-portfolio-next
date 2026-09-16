@@ -58,7 +58,7 @@
       },
       "Project_5": {
         "TITLE": "Pesqueiro Arruda's",
-        "DESCRIPTION": "Live business site for a fishing resort, with online booking, deposit payments via InfinitePay (webhook with server-side reconfirmation), and a menu synced with the admin dashboard."
+        "DESCRIPTION": "A real, in-production restaurant & reservations platform I designed and built solo for my family's business."
       }
     },
     "ProjectsAngular": {
@@ -165,6 +165,62 @@
       "COPY_EMAIL_ARIA": "Copy email",
       "BACK": "Back to top",
       "COPIED": "Email copied!"
+    }
+  },
+  "CaseStudies": {
+    "PesqueiroArruda": {
+      "BACK_LABEL": "← Back to portfolio",
+      "TAG": "Case Study",
+      "TITLE": "Pesqueiro Arruda's — Restaurant & Reservations Platform",
+      "SUBTITLE": "A real, in-production system for a family-run fishing resort & restaurant — designed and built solo, alongside a full-time job.",
+      "OVERVIEW_TITLE": "Overview",
+      "OVERVIEW": "Pesqueiro Arruda's is a fishing resort and restaurant run by my family. I designed and built the software that runs its daily operations and its public-facing booking site, and I still maintain both today.",
+      "PROBLEM_TITLE": "The problem",
+      "PROBLEM": "Before the system existed, orders and tabs were tracked on paper, stock wasn't tracked digitally, and there was no way for guests to reserve a table or pay a deposit online.",
+      "SYSTEMS_TITLE": "What I built",
+      "SYSTEMS_INTRO": "Three connected systems, each deployed and evolving on its own.",
+      "SYSTEMS": {
+        "BACKEND": {
+          "TITLE": "Backend",
+          "STACK": "Node.js, Express, MongoDB, Socket.IO, JWT, AWS S3",
+          "DESCRIPTION": "The API and single source of truth for products, stock, orders and payments. Socket.IO pushes real-time updates to every connected client; JWT protects the API; media is stored on AWS S3."
+        },
+        "ADMIN": {
+          "TITLE": "Operations app",
+          "STACK": "Next.js, TypeScript, Chakra UI, Socket.IO, dnd-kit",
+          "DESCRIPTION": "Used by staff on the floor, in the kitchen and at the register. Handles order tabs, a live kitchen queue, checkout and stock, with drag-and-drop reordering. Talks to the backend over REST and Socket.IO, so a new order appears in the kitchen instantly."
+        },
+        "SITE": {
+          "TITLE": "Public site",
+          "STACK": "Next.js, TypeScript, Tailwind CSS, InfinitePay, Resend, Zod",
+          "DESCRIPTION": "Online table reservations and deposit payments via InfinitePay, with Zod validation and email confirmations through Resend."
+        }
+      },
+      "DECISIONS_TITLE": "Key decisions",
+      "DECISIONS": [
+        {
+          "TITLE": "Webhook, but verify server-side",
+          "DESCRIPTION": "InfinitePay confirms a deposit via webhook, but the backend re-confirms the payment directly against InfinitePay's API before marking a reservation as paid — a webhook payload alone isn't trusted."
+        },
+        {
+          "TITLE": "Real-time over polling",
+          "DESCRIPTION": "Kitchen and register run on Socket.IO so every device reflects the current state of an order immediately, instead of refreshing or polling the API."
+        },
+        {
+          "TITLE": "One source of truth for the catalog",
+          "DESCRIPTION": "The public site doesn't keep its own copy of the menu — the digital menu (in progress) reads products directly from the operational backend, so stock and pricing can't drift between systems."
+        },
+        {
+          "TITLE": "Three deployables, one system",
+          "DESCRIPTION": "Splitting the internal operations app from the public site means staff-facing features ship without touching the public site's uptime, and vice versa."
+        }
+      ],
+      "RESULT_TITLE": "Result",
+      "RESULT": "In daily use by staff to run the floor, kitchen and register, and by guests to reserve tables and pay deposits online.",
+      "NEXT_STEPS_TITLE": "What's next",
+      "NEXT_STEPS": "A digital menu embedded in the public site, synced live with the backend's product catalog — spec already written, implementation in progress.",
+      "LIVE_LINK_LABEL": "Visit live site ↗",
+      "CODE_LINK_LABEL": "View code — Landing Page ↗"
     }
   }
 }
