@@ -41,46 +41,30 @@
       "TAG_TITLE": "🔗 Portfolio",
       "TITLE": "Works and projects",
       "Project_1": {
-        "TITLE": "Github Finder",
-        "DESCRIPTION": "Application that searches for someone's GitHub profile using their username, with dark and light themes."
-      },
-      "Project_2": {
-        "TITLE": "Acqua Building",
-        "DESCRIPTION": "Application developed with a functional countdown timer for the inauguration of a fictional building."
-      },
-      "Project_3": {
-        "TITLE": "Weather App",
-        "DESCRIPTION": "Application that fetches the temperature anywhere in the world."
-      },
-      "Project_4": {
-        "TITLE": "DevTech",
-        "DESCRIPTION": "Landing page for a fictional company."
-      },
-      "Project_5": {
         "TITLE": "Pesqueiro Arruda's",
         "DESCRIPTION": "A real, in-production restaurant & reservations platform I designed and built solo for my family's business."
       },
-      "Project_6": {
+      "Project_2": {
         "TITLE": "Ponto do Sabor",
         "DESCRIPTION": "Landing page for a neighborhood restaurant, with a menu and WhatsApp ordering. Concept project for LocalHood Tec."
       },
-      "Project_7": {
+      "Project_3": {
         "TITLE": "Barbearia Nova Era",
         "DESCRIPTION": "Landing page for a barbershop, with a services table and WhatsApp booking. Concept project for LocalHood Tec."
       },
-      "Project_8": {
+      "Project_4": {
         "TITLE": "Loja Encanto",
         "DESCRIPTION": "Landing page for a handmade gifts & decor shop. Concept project for LocalHood Tec."
       },
-      "Project_9": {
+      "Project_5": {
         "TITLE": "Rocha & Associados",
         "DESCRIPTION": "Landing page for an accounting firm. Concept project for LocalHood Tec."
       },
-      "Project_10": {
+      "Project_6": {
         "TITLE": "Trainya",
         "DESCRIPTION": "A gym management platform, built as a group thesis project at Etec (2022). I contributed to the backend (Node.js, Prisma, MySQL) and the members' mobile app (React Native)."
       },
-      "Project_11": {
+      "Project_7": {
         "TITLE": "Snugglify",
         "DESCRIPTION": "An online store for baby products and personalized items (maternity bags, backpacks, travel bags), with catalog, cart, checkout and an architecture ready for Shopify integration. Personal project, in development."
       }

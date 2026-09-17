@@ -22,50 +22,6 @@ export const useProjects = (): Project[] => {
       title: t('Project_1.TITLE'),
       description: t('Project_1.DESCRIPTION'),
       cards: [
-        { name: 'ReactJs' },
-        { name: 'JavaScript' },
-      ],
-      image: '/assets/images/GithubFinder.png',
-      link: 'https://github-finder-gamma-five.vercel.app',
-      featured: true,
-    },
-    {
-      title: t('Project_2.TITLE'),
-      description: t('Project_2.DESCRIPTION'),
-      cards: [
-        { name: 'ReactJs' },
-        { name: 'JavaScript' },
-      ],
-      image: '/assets/images/AcquaBuilding.png',
-      link: 'https://acqua-building.vercel.app',
-      featured: false,
-    },
-    {
-      title: t('Project_3.TITLE'),
-      description: t('Project_3.DESCRIPTION'),
-      cards: [
-        { name: 'ReactJs' },
-        { name: 'JavaScript' },
-      ],
-      image: '/assets/images/Weather App.png',
-      link: 'https://weather-app-two-liart.vercel.app',
-      featured: false,
-    },
-    {
-      title: t('Project_4.TITLE'),
-      description: t('Project_4.DESCRIPTION'),
-      cards: [
-        { name: 'ReactJs' },
-        { name: 'JavaScript' },
-      ],
-      image: '/assets/images/DevTech.png',
-      link: 'https://devtech.vercel.app',
-      featured: false,
-    },
-    {
-      title: t('Project_5.TITLE'),
-      description: t('Project_5.DESCRIPTION'),
-      cards: [
         { name: 'Next.js' },
         { name: 'TypeScript' },
         { name: 'InfinitePay' },
@@ -77,8 +33,8 @@ export const useProjects = (): Project[] => {
       caseStudyLink: '/projects/pesqueiro-arruda',
     },
     {
-      title: t('Project_6.TITLE'),
-      description: t('Project_6.DESCRIPTION'),
+      title: t('Project_2.TITLE'),
+      description: t('Project_2.DESCRIPTION'),
       cards: [
         { name: 'HTML' },
         { name: 'CSS' },
@@ -89,8 +45,8 @@ export const useProjects = (): Project[] => {
       featured: false,
     },
     {
-      title: t('Project_7.TITLE'),
-      description: t('Project_7.DESCRIPTION'),
+      title: t('Project_3.TITLE'),
+      description: t('Project_3.DESCRIPTION'),
       cards: [
         { name: 'HTML' },
         { name: 'CSS' },
@@ -101,8 +57,8 @@ export const useProjects = (): Project[] => {
       featured: false,
     },
     {
-      title: t('Project_8.TITLE'),
-      description: t('Project_8.DESCRIPTION'),
+      title: t('Project_4.TITLE'),
+      description: t('Project_4.DESCRIPTION'),
       cards: [
         { name: 'HTML' },
         { name: 'CSS' },
@@ -113,8 +69,8 @@ export const useProjects = (): Project[] => {
       featured: false,
     },
     {
-      title: t('Project_9.TITLE'),
-      description: t('Project_9.DESCRIPTION'),
+      title: t('Project_5.TITLE'),
+      description: t('Project_5.DESCRIPTION'),
       cards: [
         { name: 'HTML' },
         { name: 'CSS' },
@@ -125,8 +81,8 @@ export const useProjects = (): Project[] => {
       featured: false,
     },
     {
-      title: t('Project_10.TITLE'),
-      description: t('Project_10.DESCRIPTION'),
+      title: t('Project_6.TITLE'),
+      description: t('Project_6.DESCRIPTION'),
       cards: [
         { name: 'Node.js' },
         { name: 'Prisma' },
@@ -137,8 +93,8 @@ export const useProjects = (): Project[] => {
       featured: false,
     },
     {
-      title: t('Project_11.TITLE'),
-      description: t('Project_11.DESCRIPTION'),
+      title: t('Project_7.TITLE'),
+      description: t('Project_7.DESCRIPTION'),
       cards: [
         { name: 'Next.js' },
         { name: 'TypeScript' },
