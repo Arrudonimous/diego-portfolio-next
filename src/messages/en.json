@@ -79,6 +79,10 @@
       "Project_10": {
         "TITLE": "Trainya",
         "DESCRIPTION": "A gym management platform, built as a group thesis project at Etec (2022). I contributed to the backend (Node.js, Prisma, MySQL) and the members' mobile app (React Native)."
+      },
+      "Project_11": {
+        "TITLE": "Snugglify",
+        "DESCRIPTION": "An online store for baby products and personalized items (maternity bags, backpacks, travel bags), with catalog, cart, checkout and an architecture ready for Shopify integration. Personal project, in development."
       }
     },
     "ProjectsAngular": {

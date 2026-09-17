@@ -68,7 +68,7 @@ export const useProjects = (): Project[] => {
       cards: [
         { name: 'Next.js' },
         { name: 'TypeScript' },
-        { name: 'Supabase' },
+        { name: 'InfinitePay' },
         { name: 'Tailwind CSS' },
       ],
       image: '/assets/images/PesqueiroArruda.png',
@@ -134,6 +134,18 @@ export const useProjects = (): Project[] => {
       ],
       image: '/assets/images/Trainya.png',
       link: 'https://github.com/trainya-app',
+      featured: false,
+    },
+    {
+      title: t('Project_11.TITLE'),
+      description: t('Project_11.DESCRIPTION'),
+      cards: [
+        { name: 'Next.js' },
+        { name: 'TypeScript' },
+        { name: 'Tailwind CSS' },
+      ],
+      image: '/assets/images/Snugglify.png',
+      link: 'https://snugglify.vercel.app/',
       featured: false,
     },
   ]

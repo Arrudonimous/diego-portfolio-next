@@ -79,6 +79,10 @@
       "Project_10": {
         "TITLE": "Trainya",
         "DESCRIPTION": "Plataforma de gestão para academias, TCC em grupo na Etec (2022). Contribuí no back-end (Node.js, Prisma, MySQL) e no app mobile dos membros (React Native)."
+      },
+      "Project_11": {
+        "TITLE": "Snugglify",
+        "DESCRIPTION": "Loja online de produtos para bebês e itens personalizados (bolsas de maternidade, mochilas, malas de viagem), com catálogo, carrinho, checkout e arquitetura pronta para integração com Shopify. Projeto pessoal em desenvolvimento."
       }
     },
     "ProjectsAngular": {
