@@ -100,9 +100,9 @@ export const useProjects = (): Project[] => {
         { name: 'TypeScript' },
         { name: 'Tailwind CSS' },
       ],
-      image: '/assets/images/Snugglify.png',
+      image: '/assets/images/Snugglify.jpg',
       link: 'https://snugglify.vercel.app/',
-      featured: false,
+      featured: true,
     },
   ]
 }
