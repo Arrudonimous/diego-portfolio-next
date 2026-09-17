@@ -59,6 +59,22 @@
       "Project_5": {
         "TITLE": "Pesqueiro Arruda's",
         "DESCRIPTION": "Plataforma de restaurante e reservas em produção, desenvolvida sozinho para o negócio da minha família."
+      },
+      "Project_6": {
+        "TITLE": "Ponto do Sabor",
+        "DESCRIPTION": "Landing page para restaurante de bairro, com cardápio e pedidos via WhatsApp. Projeto conceito para a LocalHood Tec."
+      },
+      "Project_7": {
+        "TITLE": "Barbearia Nova Era",
+        "DESCRIPTION": "Landing page para barbearia, com tabela de serviços e agendamento via WhatsApp. Projeto conceito para a LocalHood Tec."
+      },
+      "Project_8": {
+        "TITLE": "Loja Encanto",
+        "DESCRIPTION": "Landing page para loja de presentes e decoração artesanal. Projeto conceito para a LocalHood Tec."
+      },
+      "Project_9": {
+        "TITLE": "Rocha & Associados",
+        "DESCRIPTION": "Landing page para escritório de contabilidade. Projeto conceito para a LocalHood Tec."
       }
     },
     "ProjectsAngular": {

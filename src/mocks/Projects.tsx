@@ -76,5 +76,53 @@ export const useProjects = (): Project[] => {
       featured: true,
       caseStudyLink: '/projects/pesqueiro-arruda',
     },
+    {
+      title: t('Project_6.TITLE'),
+      description: t('Project_6.DESCRIPTION'),
+      cards: [
+        { name: 'HTML' },
+        { name: 'CSS' },
+        { name: 'JavaScript' },
+      ],
+      image: '/assets/images/PontoDoSabor.png',
+      link: 'https://ponto-do-sabor-six.vercel.app/',
+      featured: false,
+    },
+    {
+      title: t('Project_7.TITLE'),
+      description: t('Project_7.DESCRIPTION'),
+      cards: [
+        { name: 'HTML' },
+        { name: 'CSS' },
+        { name: 'JavaScript' },
+      ],
+      image: '/assets/images/BarbeariaNovaEra.png',
+      link: 'https://barbearia-nova-era.vercel.app/',
+      featured: false,
+    },
+    {
+      title: t('Project_8.TITLE'),
+      description: t('Project_8.DESCRIPTION'),
+      cards: [
+        { name: 'HTML' },
+        { name: 'CSS' },
+        { name: 'JavaScript' },
+      ],
+      image: '/assets/images/LojaEncanto.png',
+      link: 'https://loja-encanto.vercel.app/',
+      featured: false,
+    },
+    {
+      title: t('Project_9.TITLE'),
+      description: t('Project_9.DESCRIPTION'),
+      cards: [
+        { name: 'HTML' },
+        { name: 'CSS' },
+        { name: 'JavaScript' },
+      ],
+      image: '/assets/images/ContabilidadeRocha.png',
+      link: 'https://contabilidade-rocha-rouge.vercel.app/',
+      featured: false,
+    },
   ]
 }

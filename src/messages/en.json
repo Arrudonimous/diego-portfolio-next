@@ -59,6 +59,22 @@
       "Project_5": {
         "TITLE": "Pesqueiro Arruda's",
         "DESCRIPTION": "A real, in-production restaurant & reservations platform I designed and built solo for my family's business."
+      },
+      "Project_6": {
+        "TITLE": "Ponto do Sabor",
+        "DESCRIPTION": "Landing page for a neighborhood restaurant, with a menu and WhatsApp ordering. Concept project for LocalHood Tec."
+      },
+      "Project_7": {
+        "TITLE": "Barbearia Nova Era",
+        "DESCRIPTION": "Landing page for a barbershop, with a services table and WhatsApp booking. Concept project for LocalHood Tec."
+      },
+      "Project_8": {
+        "TITLE": "Loja Encanto",
+        "DESCRIPTION": "Landing page for a handmade gifts & decor shop. Concept project for LocalHood Tec."
+      },
+      "Project_9": {
+        "TITLE": "Rocha & Associados",
+        "DESCRIPTION": "Landing page for an accounting firm. Concept project for LocalHood Tec."
       }
     },
     "ProjectsAngular": {
