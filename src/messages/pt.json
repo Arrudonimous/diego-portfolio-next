@@ -75,6 +75,10 @@
       "Project_9": {
         "TITLE": "Rocha & Associados",
         "DESCRIPTION": "Landing page para escritório de contabilidade. Projeto conceito para a LocalHood Tec."
+      },
+      "Project_10": {
+        "TITLE": "Trainya",
+        "DESCRIPTION": "Plataforma de gestão para academias, TCC em grupo na Etec (2022). Contribuí no back-end (Node.js, Prisma, MySQL) e no app mobile dos membros (React Native)."
       }
     },
     "ProjectsAngular": {

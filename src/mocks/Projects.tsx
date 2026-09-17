@@ -124,5 +124,17 @@ export const useProjects = (): Project[] => {
       link: 'https://contabilidade-rocha-rouge.vercel.app/',
       featured: false,
     },
+    {
+      title: t('Project_10.TITLE'),
+      description: t('Project_10.DESCRIPTION'),
+      cards: [
+        { name: 'Node.js' },
+        { name: 'Prisma' },
+        { name: 'React Native' },
+      ],
+      image: '/assets/images/Trainya.png',
+      link: 'https://github.com/trainya-app',
+      featured: false,
+    },
   ]
 }
